@@ -1,10 +1,5 @@
 export ZSH="/Users/danilo.fuchs/.oh-my-zsh"
 
-ZSH_THEME="spaceship"
-
-export SPACESHIP_EXIT_CODE_SHOW=true
-export SPACESHIP_DOCKER_SHOW=false
-
 plugins=(
     git
     aws
@@ -15,16 +10,14 @@ plugins=(
     sudo
 )
 
-
 source $ZSH/oh-my-zsh.sh
-
-# include Z
-. ~/z.sh
 
 source ~/.bash_profile
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/danilo.fuchs/.sdkman"
 [[ -s "/Users/danilo.fuchs/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/danilo.fuchs/.sdkman/bin/sdkman-init.sh"
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
 alias g='git'
 alias gca='git commit --amend'
@@ -34,3 +27,5 @@ alias grb='git rebase'
 alias gf='git fetch'
 alias gs='git stash'
 alias gsp='git stash pop'
+
+eval "$(starship init zsh)"

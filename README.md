@@ -4,10 +4,12 @@
 
 ```bash
 chmod +x ./install*.sh
-# Base config
+# Starship prompt
+./install_starship.sh
+# Oh my zsh
+./install_oh_my_zsh.sh
+# Link configs
 ./install.sh
 # Node
 ./install_node.sh
-# Oh my zsh
-./install_oh_my_zsh.sh
 ```
