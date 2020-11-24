@@ -18,6 +18,7 @@ export SDKMAN_DIR="/Users/danilo.fuchs/.sdkman"
 [[ -s "/Users/danilo.fuchs/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/danilo.fuchs/.sdkman/bin/sdkman-init.sh"
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+export PATH="$PATH:$HOME/flutter/bin"
 
 alias g='git'
 alias gca='git commit --amend'
