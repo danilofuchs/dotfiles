@@ -12,4 +12,6 @@ chmod +x ./install*.sh
 ./install.sh
 # Node
 ./install_node.sh
+# Java
+./install_java.sh
 ```
