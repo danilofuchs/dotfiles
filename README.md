@@ -10,8 +10,12 @@ chmod +x ./install*.sh
 ./install_oh_my_zsh.sh
 # Link configs
 ./install.sh
+# Homebrew
+./install_brew.sh
 # Node
 ./install_node.sh
 # Java
 ./install_java.sh
+# Ruby
+./install_ruby.sh
 ```
