@@ -1,4 +1,5 @@
-export ZSH="/Users/danilo.fuchs/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
+export STARSHIP_CONFIG="$HOME/.starship.toml"
 
 plugins=(
     git
@@ -30,3 +31,5 @@ alias gs='git stash'
 alias gsp='git stash pop'
 
 eval "$(starship init zsh)"
+
+source "$HOME/pug/pug.sh"
