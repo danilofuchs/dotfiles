@@ -32,4 +32,5 @@ alias gsp='git stash pop'
 
 eval "$(starship init zsh)"
 
-source "$HOME/pug/pug.sh"
+export PUG_PATH="$HOME/pug"
+. "$PUG_PATH/pug.sh"
