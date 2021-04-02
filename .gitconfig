@@ -3,3 +3,5 @@
 [user]
 	email = danilo.fuchs@ebanx.com
 	name = Danilo Campana Fuchs
+[core]
+	editor = vim
