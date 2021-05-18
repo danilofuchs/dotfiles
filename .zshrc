@@ -20,6 +20,7 @@ export SDKMAN_DIR="/Users/danilo.fuchs/.sdkman"
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 export PATH="$PATH:$HOME/flutter/bin"
+export PATH="$PATH:$HOME/flutter/.pub-cache/bin"
 export PATH="$PATH:$HOME/.pub-cache/bin"
 
 alias g='git'
