@@ -1,4 +1,4 @@
 #!/bin/bash -ex
-curl -fsSL https://starship.rs/install.sh | bash
+curl -fsSL https://starship.rs/install.sh | sh
 
 echo -e "\neval \"\$(starship init zsh)\"" >> ~/.zshrc
