@@ -1,7 +1,16 @@
-[use]
-	email = danilo.fuchs@ebanx.com
 [user]
-	email = danilo.fuchs@ebanx.com
+	email = danilo_fuchs@hotmail.com
 	name = Danilo Campana Fuchs
 [core]
 	editor = vim
+
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
+[init]
+	defaultBranch = main
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
